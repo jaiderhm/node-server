@@ -2,6 +2,7 @@ const readline = require('readline-sync');
 
 const tasks = [];
 
+//funcion para añadir tareas
 function addTask() {
   const indicator = readline.question('Indicador: ');
   const description = readline.question('Descripción: ');
@@ -9,6 +10,7 @@ function addTask() {
   console.log('Tarea añadida.');
 }
 
+//funcion para eliminar tareas
 function deleteTask() {
   const index = readline.question('Índice de la tarea a eliminar: ');
   if (index >= 0 && index < tasks.length) {
@@ -19,6 +21,7 @@ function deleteTask() {
   }
 }
 
+//funcion para completar tareas
 function completeTask() {
   const index = readline.question('Índice de la tarea completada: ');
   if (index >= 0 && index < tasks.length) {
@@ -29,6 +32,7 @@ function completeTask() {
   }
 }
 
+//funcion para mostrar tareas
 function showTasks() {
   console.log('Lista de tareas:');
   tasks.forEach((task, index) => {
@@ -36,6 +40,7 @@ function showTasks() {
   });
 }
 
+//funcion que muestra el menu en consola
 function main() {
   while (true) {
     console.log('\nOpciones:');
