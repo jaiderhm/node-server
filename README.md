@@ -4,7 +4,7 @@
 
 2. **¿Qué sucedió al usar el método then()?**
 
-   Al usar el método `.then()`, también puedes manejar las promesas de manera asincrónica, pero la estructura del código es diferente. En lugar de usar `await`, debes encadenar `.then()` para manejar las promesas una tras otra. Es una forma más antigua de trabajar con promesas y puede resultar en un código más anidado.
+   Al usar el método `.then()`, también puedes manejar las promesas de manera asincrónica, pero la estructura del código es diferente.
 
 3. **¿Qué diferencias encontraste entre async, await y el método then()?**
 
